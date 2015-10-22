@@ -1,0 +1,19 @@
+{
+  "name": "artsiom-blog",
+  "version": "0.0.0",
+  "authors": [
+    "Artsiom Aliakseichyk <artsiom_aliakseichyk@epam.com>"
+  ],
+  "main": "server.js",
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}

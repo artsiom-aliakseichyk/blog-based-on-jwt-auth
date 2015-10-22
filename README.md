@@ -1,2 +1,5 @@
 # blog-based-on-jwt-auth
-Start: node server.js
+### Start
+```shell
+node server.js
+```

@@ -2,16 +2,20 @@ html(ng-app="blogApp")
 	head
 		title Blog
 		script(src="./bower_components/angular/angular.min.js")
+		script(src="./bower_components/angular-ui-router/release/angular-ui-router.min.js")
 		script(src="./app/app.js")
 		script(src="./app/controllers/loginController.js")
+		script(src="./app/controllers/signupController.js")
+
 	body
-		h1 HELLO #{login} #{password}
-		a(href='signup') sign up
-		p find user
-		div.login-wrapper(ng-controller="loginController")
-			form(ng-submit="submit()")
-				input(ng-model='user.login' name="login" placeholder="login" type="text")
-				input(ng-model='user.password' name='password' placeholder="password" type="password")
-				input(type="submit")
+		div(ui-view)
+			h1 HELLO #{login} #{password}
+			a(href='signup') sign up
+			p find user
+			div.login-wrapper(ng-controller="loginController")
+				form(ng-submit="submit()")
+					input(ng-model='user.login' name="login" placeholder="login" type="text")
+					input(ng-model='user.password' name='password' placeholder="password" type="password")
+					input(type="submit")
 
 
